@@ -2,10 +2,10 @@
 Hello,
 This is the very very early beginings of the drift net web client. This web client will serve as the home of the collaborative art project of the same name spawned out of the terminally online chaos of the coincell-cord.
 
-Follow allong and/or feel free to reach out to me if you're interested
+Follow allong and/or feel free to reach out to me if you're interested in helping with the project
 :)
 
- - SR
+- SR
 
 
 
