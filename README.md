@@ -1,5 +1,17 @@
-# create-svelte
+# Drift Net
+Hello,
+This is the very very early beginings of the drift net web client. This web client will serve as the home of the collaborative art project of the same name spawned out of the terminally online chaos of the coincell-cord.
 
+Follow allong and/or feel free to reach out to me if you're interested
+:)
+
+ - SR
+
+
+
+
+# create-svelte Instructions
+---
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
 ## Creating a project
