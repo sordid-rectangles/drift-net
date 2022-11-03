@@ -17,24 +17,23 @@
     <slot/>
 
 
-<style>
-    :global(body){
-       background-color: white;
-       /* box-sizing: border-box; */
 
-       font-family: 'Source Code Pro', monospace;
-    }
+<style>
     .body{
        width: auto;
        height: auto; 
        padding: 0em;
        /* remove margin later for fullscreen canvas */
        margin: 0; 
-       overflow: hidden;
+       overflow: scroll;
        background-color: white;
        /* box-sizing: border-box; */
 
        font-family: 'Source Code Pro', monospace;
+    }
+
+    :global(figure) {
+        max-width: 100px;
     }
 
     /* main {

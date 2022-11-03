@@ -3,8 +3,13 @@
     import { browser } from '$app/environment';
     import { onDestroy, onMount } from 'svelte';
     import { createScene } from '$lib/scene.js';
+    import { postMap } from "$lib/stores/stores.js";
     
-    let canvas_main
+    export let loaded;
+    export let postSlugs;
+
+    console.log(postSlugs);
+    let canvas_main    
 
     onMount(() => {
 
@@ -14,12 +19,9 @@
         // } else {
         //     console.log("not in browser! no canvas to be had here! yuck!")
         // }
-        
-        createScene(canvas_main);
+        createScene(canvas_main, postSlugs);
 
     });
-    
-
 </script>
 
 <canvas class="canvas" bind:this={canvas_main} />

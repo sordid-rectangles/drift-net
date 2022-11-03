@@ -1,4 +1,3 @@
-
 <svelte:head>
     <title>Drift Net - Error Page</title>
     <meta name="description" content="A loosely themed collaborative art project." />
@@ -6,6 +5,7 @@
 
 
 <h1>ERORR. VERY SUPER UNDER CONSTRUCTION :-/</h1>
+
 
 <style>
     

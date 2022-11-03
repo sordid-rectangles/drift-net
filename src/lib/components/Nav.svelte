@@ -11,12 +11,12 @@
 </script>
 
 <nav>
-    <h1 class="logo"><DriftLogo logo_height_scale={0.3} logo_width_scale={0.3}/> <span>DriftNet</span></h1>
+    <h1 class="logo"><DriftLogo logo_height_scale={0.3} logo_width_scale={0.3}/> <span><a href="/">DriftNet</a></span></h1>
     <ul class="navBar">
-        <li><a href="#articles">articles</a></li>
-        <li><a href="#visuals">visuals</a></li>
-        <li><a href="#usermesh">user_mesh</a></li>
-        <li><a href="#drift">drift_mode</a></li>
+        <li><a href="/articles">articles</a></li>
+        <li><a href="/visuals">visuals</a></li>
+        <li><a href="/usermesh">user_mesh</a></li>
+        <li><a href="/">drift_mode</a></li>
     </ul>
     <span></span>
     <span></span>
@@ -36,6 +36,12 @@
         box-sizing: border-box;
         position: fixed;
         z-index: 8;
+    }
+    nav span a{ 
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        
     }
     nav ul li { 
         list-style-type: none;
