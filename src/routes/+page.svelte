@@ -14,4 +14,4 @@
 </svelte:head>
 
 <!-- <Nav /> -->
-<Canvas loaded="{data.loaded}," postSlugs={data.postSlugs} />
+<Canvas loaded={data.loaded}, postSlugs={data.postSlugs} />

@@ -11,12 +11,7 @@
 	let canvas_main;
 
 	onMount(() => {
-		// if(browser) {
-		//     canvas_main.width = window.innerWidth
-		//     canvas_main.height = window.innerHeight
-		// } else {
-		//     console.log("not in browser! no canvas to be had here! yuck!")
-		// }
+
 		if ($loadedArticles) {
 			$articleNet = createScene(canvas_main, postSlugs, $articleNet);
 			$loadedArticles = true;
@@ -28,6 +23,7 @@
 			console.log('Loaded New Article Net');
 			console.log($articleNet);
 		}
+		
 	});
 </script>
 

@@ -31,6 +31,6 @@ export const load = async ({ fetch }) => {
 
 	return {
 		postSlugs: postSlugs,
-		loaded: loadedMap
+		loaded: loadedMap,
 	};
 };
