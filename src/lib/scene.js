@@ -36,6 +36,7 @@ const pointer = new THREE.Vector2();
 
 export let hoveredArticle;
 
+
 let renderer1;
 
 /**
@@ -57,6 +58,7 @@ const animate = () => {
 		hoveredArticle = null;
 	}
 	//hoveredArticle = null;
+	//requestAnimationFrame(animate);
 	renderer1.render(scene1, cam1);
 };
 
@@ -89,6 +91,12 @@ const onPointerMove = (event) => {
 };
 
 /**
+ * Custom Article Click Event
+ * 
+ */
+//const articleClicked = new CustomEvent( 'articleSelected', {bubbles: true, detail: hoveredArticle.object.userData.Slug});
+
+/**
  * Mousedown Handler
  *
  */
@@ -97,6 +105,9 @@ const onMouseDown = (event) => {
 	if (hoveredArticle) {
 		// window.open(hoveredArticle.object.userData.URL, "_self");
 		console.log(hoveredArticle.object.userData.Slug);
+		const articleClicked = new CustomEvent( 'articleSelected', {bubbles: true, detail: "test"});
+		canvas_main.dispatchEvent(articleClicked)
+		
 		//window.location.replace('/articles/' + hoveredArticle.object.userData.Slug);
 
 	}
@@ -199,6 +210,7 @@ export const createScene = (el, map, articleNet) => {
 
 	window.addEventListener('pointermove', onPointerMove);
 	window.addEventListener('mousedown', onMouseDown);
+	window.addEventListener('aricleSelected', (e)=>{console.log("hit")});
 	return articles;
 };
 
